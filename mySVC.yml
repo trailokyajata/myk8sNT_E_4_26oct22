@@ -6,9 +6,9 @@ metadata:
     app: myjavaapp
 spec: 
   type: NodePort
-  ports: 
+  ports:
   - port: 8080
-    nodeport: 30001
+    nodePort: 30001
     protocol: TCP
   selector: 
     app: myjavaapp
