@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Services
 metadata:
-  name: maha-svc 
+  name: maha-SVC 
   labels: 
     app: myjavaapp
 spec: 
