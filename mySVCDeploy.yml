@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: myjavaapp-svc
   labels: 
-    app:  myjavaapp
+    app: myjavaapp
 
 spec: 
   type: NodePort
