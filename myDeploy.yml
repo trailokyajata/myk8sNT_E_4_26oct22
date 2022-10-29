@@ -1,0 +1,22 @@
+apiversion: apps/v1
+kind: Deployment 
+metadata: 
+  name: myjavaapp-deploy
+  labels: 
+    aap: myjavaapp 
+spec: 
+  replicas: 2
+  selector: 
+    matchLabels: 
+      app: myjavaapp 
+  template: 
+    metadata: 
+      labels: 
+        app: myjavaapp 
+    spec: 
+      containers: 
+      - name: myjavaapp-container 
+        image: trailokya121/myonlinebooking;1 
+        ports: 
+        - containerPort: 8080
+    
